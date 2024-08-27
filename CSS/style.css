@@ -9,8 +9,7 @@ body {
     padding: 0;
     font-family: 'Roboto', sans-serif;
     font-family: "Jost", sans-serif;
-    font-weight: 600;
-    font-size: 1.5rem;
+   
     letter-spacing: -.4px;
     line-height: 1.5;
 
@@ -68,6 +67,7 @@ body {
     font-family: "Jost", sans-serif;
     
     color: #fff;
+    
     padding: 1em;
     margin-bottom: 0;
 }
@@ -189,6 +189,7 @@ details {
 
 }
 
+
 contact-icon {
     width: 10px;
     height: 5px;
@@ -249,7 +250,7 @@ h3 {
 }
 
 .footer-contact-icon {
-    color: #fe4f02;
+    color: #007BFF;
 }
 
 .footer-contact-item {
@@ -429,7 +430,9 @@ nav {
     grid-column: 2;
     height: fit-content;
     margin: auto;
-    background-color: #1631911e;
+    background-color: #0d3eee3a;
+    background-color: #007bff1f;
+    background-color: #ffffff1c;
    
     border-radius: 10px;
    
@@ -475,8 +478,8 @@ nav {
 
 .about-info {
     /*border: solid black;*/
-    padding-left: 6em;
-    padding-right: 6em;
+    padding-left: 2em;
+    padding-right: 2em;
     padding-top: 4em;
     padding-bottom: 8em;
     grid-column: 2; 
@@ -508,6 +511,7 @@ nav {
     & p {
         text-align: justify;
         color: white;
+        font-size: 1.2rem;
     }
 }
 
@@ -599,6 +603,14 @@ nav {
     
 }
 
+.service-col {
+    grid-column: 2;
+    /*border: solid black;*/
+    border: solid rgb(197, 194, 194) 1px;
+    border-radius: 2%;
+    /*border: solid red;*/
+}
+
 /*.service-wrapper{
     grid-column: 2;
 }*/
@@ -613,6 +625,46 @@ nav {
   color: #000;
 }
 
+/* Events */ 
+.events-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.events-image {
+    display: none;
+    grid-column: 2;
+}
+
+.events-info {
+    grid-column: 2;
+    /*border: solid red;*/
+}
+
+.event-div {
+    display: flex;
+    padding: 1em;
+    border-bottom: solid rgb(197, 194, 194) 1px;
+    justify-content: space-between;
+
+
+}
+
+.events-btn {
+    margin-top: 3em;
+    align-self: flex-start;
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+.event-text {
+    padding-top: .5em;
+    font-size: 1rem;
+     & * {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
 
 /* Our-work section */
 .work {
@@ -686,6 +738,7 @@ nav {
     /*border: solid black;*/
 }
 
+
 /* Contact */
 .contact-section {
     /*margin-top: 2em;*/
@@ -706,6 +759,9 @@ nav {
 .subscription-div {
     /*border: solid black;*/
     margin-top: 3em;
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
 }
 
 .subscription-text {
@@ -715,6 +771,7 @@ nav {
     justify-content: center;
     background-color: #007bff33;
     padding-inline: 3em;
+    padding-bottom: 1em;
 
     & h4 {
         margin-bottom: 0;
@@ -726,6 +783,7 @@ nav {
 }
 
 .subscription-img {
+    display: none;
     height: 60vh;
     width: 100%;
     /*border: solid yellow;*/
@@ -736,6 +794,23 @@ nav {
         object-fit:cover;
     }
 }
+
+
+.subscription-input {
+    border: solid rgb(206, 204, 204) 1px;
+    padding: 1em;
+
+}
+
+.subscription-btn {
+    background-color: #007BFF;
+    padding: 1em;
+    border: none;
+    font-family: "Poppins";
+    font-weight: 500;
+    color: #dee2e6;
+}
+
 
 
 .contact-info {
@@ -906,10 +981,10 @@ nav {
 }
 
 .social {
-    color: #fe4f02;
-    background-color: #fff;
-    width: 30px;
-    height: 30px;
+    color: #fff;
+   
+    width: 50px;
+    height: 50px;
     padding: .5em;
     border-radius: 50%;
     margin-right: .2em;
@@ -927,7 +1002,6 @@ nav {
     & span {
         font-family: 'Lato', sans-serif;
         font-size: inherit;
-        color: #fe4f02;
     }
 
    
@@ -1040,6 +1114,8 @@ h3 {
 
 .about-info {
     grid-column: 3;
+    padding-left: 6em;
+    padding-right: 6em;
     /*border: solid black;*/
      
     }
@@ -1093,7 +1169,7 @@ h3 {
     border-radius: 2%;
 }
 
-.col:nth-child(3n+1) {
+.service-col:nth-child(3n+1) {
     grid-column: 2 / span 1;
 }
 
@@ -1109,8 +1185,21 @@ h3 {
 }
 
 .subscription-div {
+    display: grid;
     grid-template-columns: minmax(1em, 1fr) minmax(40%, 1fr) minmax(30%,1fr) minmax(1em, 1fr);
+    /*border: solid red;*/
 }
+
+.subscription-text {
+    grid-column: 2;
+}
+
+.subscription-img {
+    grid-column: 3;
+    display: inline;
+    /*border: solid black;*/
+}
+
 
 .subscription-input {
     border: solid rgb(206, 204, 204) 1px;
@@ -1118,14 +1207,7 @@ h3 {
 
 }
 
-.subscription-btn {
-    background-color: #007BFF;
-    padding: 1em;
-    border: none;
-    font-family: "Poppins";
-    font-weight: 500;
-    color: #dee2e6;
-}
+
 
 .project,
 .footer-item {
@@ -1149,6 +1231,7 @@ h3 {
 }
 
 .events-image {
+    display: inline;
     grid-column: 1;
     height: 100vh;
     width: 100%;
@@ -1168,29 +1251,7 @@ h3 {
     margin-left: 3em;
 }
 
-.event-div {
-    display: flex;
-    padding: 1em;
-    border-bottom: solid rgb(197, 194, 194) 1px;
-    justify-content: space-between;
 
-
-}
-
-.events-btn {
-    margin-top: 3em;
-    align-self: flex-start;
-    padding-top: .5em;
-    padding-bottom: .5em;
-}
-
-.event-text {
-    padding-top: .5em;
-    & * {
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-}
 
 /* Contact-section*/
 .contact-grid {
@@ -1239,6 +1300,11 @@ h3 {
 .form-btn {
     grid-column: 1 / span 2;
     grid-row: 4;
+}
+
+.event-text {
+       font-size: 1.2rem;
+    
 }
 
 

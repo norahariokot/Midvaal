@@ -9,7 +9,7 @@ function updateStyle() {
 function updateStyle2() {
     // Find the element
     let selectedDiv = document.getElementsByClassName("service");
-    selectedDiv[0].style.backgroundColor = "#f86121";
+    selectedDiv[0].style.backgroundColor = "#007bff";
     selectedDiv[0].style.color = "#fff";
     console.log(selectedDiv);
 }
