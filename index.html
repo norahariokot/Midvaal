@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midvaal Local Municipality</title>
+    <link rel="shortcut icon" href="Images/Favicon/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400&family=Karla:wght@400;500;600;700;800&family=Lato:wght@300;400;700;900&family=Montserrat:wght@500;600;700;800;900&family=Open+Sans:wght@700;800&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Prata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800;900&family=Catamaran:wght@100..900&family=Livvic:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400..900;1,400..900&family=Cabin:ital,wght@0,400..700;1,400..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <!--<link rel="stylesheet" href="CSS/schedule.css">-->
+    <!--<link rel="stylesheet" href="CSS/style.css">-->
+  
+
+    <script src="script.js" async></script>
+
+</head>
+<body>
+  
+    <header class="header main-grid">
+        <div class="header-content">
+            <img src="Images/Logo/logo.png" alt="" class="logo" width="90%" height="">
+
+            <nav>
+                <ul class="nav-side-bar" id="side-bar">
+                    <li class="nav-item" onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    <li class="nav-item" onclick="hideSidebar()"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item" onclick="hideSidebar()" ><a href="#" class="nav-link">About Midivaal</a></li>
+                    <li class="nav-item" onclick="hideSidebar()" ><a href="#" class="nav-link">Development Planning</a></li>
+                    <li class="nav-item"onclick="hideSidebar()" ><a href="#" class="nav-link">Procurement</a></li> 
+                    <li class="nav-item"onclick="hideSidebar()" ><a href="#" class="nav-link">Statutory Reporting </a></li>   
+                    <li class="nav-item"onclick="hideSidebar()" ><a href="#" class="nav-link">Vacancies </a></li>   
+                    <li class="nav-item"onclick="hideSidebar()" ><a href="#" class="nav-link">Explore Midvaal </a></li> 
+                    <li class="nav-item"onclick="hideSidebar()" ><a href="#" class="nav-link">PPP </a></li>                    
+                </ul>
+                <ul class="nav-list">
+                    <li class="nav-item hide-on-mobile"><a href="#hero" class="nav-link">Home</a></li>
+                    <li class="nav-item hide-on-mobile"><a href="#about" class="nav-link">About Midivaal</a></li>
+                    <li class="nav-item hide-on-mobile"><a href="#services" class="nav-link">Development Planning</a></li>
+                    <li class="nav-item hide-on-mobile"><a href="#contact" class="nav-link">Statutory Reporting </a></li> 
+                    <li class="nav-item hide-on-mobile"><a href="#contact" class="nav-link">Vacancies</a></li> 
+                    <li class="nav-item hide-on-mobile"><a href="#contact" class="nav-link">Explore Midivaal</a></li> 
+                    <li class="nav-item hide-on-mobile"><a href="#contact" class="nav-link">PPP</a></li> 
+                   <li onclick="showSidebar()" class="menu-btn"> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+
+                </ul>
+            </nav>
+
+            <form action="/work_withus" method="GET" class="header-btn-form">
+                <button type="submit" class="header-btn">Work with us</button>
+            </form>
+
+        </div>
+    </header>
+
+
+    <main class="main">
+   
+        <section class="hero" id="hero">
+            <div class="hero-text">
+               
+                <h1 class="hero-title ">  Welcome to  <span class="main-title-span"> Midvaal </span> Local Municipality </h1>  
+                <p class="hero-tagline ">Midvaal Local Municipality prides itself on being a stable institution able to provide services to its residents efficiently while improving their socioeconomic conditions. </p>
+             
+            </div>
+            
+          
+        </section>
+
+        <section class="about-section about-grid about-flex" id="about">
+            <div    class="about-img">                
+                    <img src="Images/Mayor/download (5).jfif" alt="" class="about-img1">                             
+            </div>
+            
+
+            <div class="about-info">
+                <h3 class="about-subtitle">A Message From the Mayor</h3>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia totam quia doloribus, quibusdam reiciendis adipisci, soluta dicta hic ducimus et qui, ex consequatur veniam natus voluptas dolores debitis corrupti dignissimos! 
+                </p>  
+                
+                    
+            </div>
+
+        </section>
+
+        <section class="services" id="services">
+                       
+            <h3 class="section-title">Find the services you require from Midvaal</h3>
+
+            <div class="text-content main-grid services-grid">
+              
+                    <div class="service col service-col" id="web-service" onclick="updateStyle()" onmouseenter="updateStyle2()" onmouseout="resetStyle()">
+                        <figure class="service-img">
+                            <img src="Images/Icon/hall (1).png" alt="">
+                        </figure>
+                        <h4 class="service-title">Municipal Facilities</h4>
+                        <p class="service-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel.
+                            <details>
+                                <summary>Read More </summary>
+                            <br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium inventore rerum quo quibusdam omnis exercitationem dolorum expedita, quaerat fugit nihil itaque maxime assumenda hic suscipit possimus totam sed modi atque. 
+                            
+                            </details>    
+                        </p>
+                    
+                    </div>
+        
+    
+                <div class="service col service-col" onclick="updateStyle()" onmouseenter="updateStyle2()" onmouseout="resetStyle()" id="mobile-service">
+                    <figure class="service-img">
+                       <img src="Images/Icon/resume.png" alt="">
+                    </figure>
+                    <h4 class="service-title">Applications</h4>
+                    <p class="service-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel.
+                        <details>
+                            <summary>Read More </summary>
+                        <br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium inventore rerum quo quibusdam omnis exercitationem dolorum expedita, quaerat fugit nihil itaque maxime assumenda hic suscipit possimus totam sed modi atque. 
+                        
+                        </details>    
+                    </p>
+                </div>
+    
+                <div class="service col service-col" onclick="updateStyle()" onmouseenter="updateStyle2()" onmouseout="resetStyle()" id="ux-service">
+                   
+                    <figure class="service-img">
+                        <img src="Images/Icon/cashless-payment.png" alt="">
+                    </figure>
+                  
+                    <h4 class="service-title">Payments</h4>
+                    <p class="service-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel.
+                        <details>
+                            <summary>Read More </summary>
+                        <br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium inventore rerum quo quibusdam omnis exercitationem dolorum expedita, quaerat fugit nihil itaque maxime assumenda hic suscipit possimus totam sed modi atque. 
+                        
+                        </details>    
+                    </p>
+                </div>
+
+                <div class="service col service-col" onclick="updateStyle()" onmouseenter="updateStyle2()" onmouseout="resetStyle()" id="ux-service">
+                   
+                    <figure class="service-img">
+                        <img src="Images/Icon/licensing.png" alt="">
+                    </figure>
+                  
+                    <h4 class="service-title">Business Licensing </h4>
+                    <p class="service-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel.
+                        <details>
+                            <summary>Read More </summary>
+                        <br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium inventore rerum quo quibusdam omnis exercitationem dolorum expedita, quaerat fugit nihil itaque maxime assumenda hic suscipit possimus totam sed modi atque. 
+                        
+                        </details>    
+                    </p>
+                </div>
+
+                <div class="service col service-col" onclick="updateStyle()" onmouseenter="updateStyle2()" onmouseout="resetStyle()" id="ux-service">
+                   
+                    <figure class="service-img">
+                        <img src="Images/Icon/ambulance.png" alt="">
+                    </figure>
+                  
+                    <h4 class="service-title">Emergency Services</h4>
+                    <p class="service-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel.
+                        <details>
+                            <summary>Read More </summary>
+                        <br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium inventore rerum quo quibusdam omnis exercitationem dolorum expedita, quaerat fugit nihil itaque maxime assumenda hic suscipit possimus totam sed modi atque. 
+                        
+                        </details>    
+                    </p>
+                </div>
+
+                <div class="service col service-col" onclick="updateStyle()" onmouseenter="updateStyle2()" onmouseout="resetStyle()" id="ux-service">
+                   
+                    <figure class="service-img">
+                        <img src="Images/Icon/waste.png" alt="">
+                    </figure>
+                  
+                    <h4 class="service-title">Waste Management</h4>
+                    <p class="service-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel.
+                        <details>
+                            <summary>Read More </summary>
+                        <br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium inventore rerum quo quibusdam omnis exercitationem dolorum expedita, quaerat fugit nihil itaque maxime assumenda hic suscipit possimus totam sed modi atque. 
+                        
+                        </details>    
+                    </p>
+                </div>
+
+                <div class="service col service-col onclick="updateStyle()" onmouseenter="updateStyle2()" onmouseout="resetStyle()" id="ux-service">
+                   
+                    <figure class="service-img">
+                        <img src="Images/Icon/location.png" alt="">
+                    </figure>
+                  
+                    <h4 class="service-title">Places of interest </h4>
+                    <p class="service-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel.
+                        <details>
+                            <summary>Read More </summary>
+                        <br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium inventore rerum quo quibusdam omnis exercitationem dolorum expedita, quaerat fugit nihil itaque maxime assumenda hic suscipit possimus totam sed modi atque. 
+                        
+                        </details>    
+                    </p>
+                </div>
+
+
+            </div>
+            
+        </section>
+
+        <section class="events-section">
+            <div class="events-image">
+                <img src="Images/pexels-clickshadow-20536741 (1).jpg" alt="">
+            </div>
+            <div class="events-info">
+                <h3 class="event-subtitle">Events taking place in Midvaal</h3>
+                <div class="events-container">
+                    <div class="event-div">
+                        <div class="event-img-div">
+                            <img src="Images/Events/edit-gadsden-1616084_1920-150x150.jpg" alt="">
+                        </div>
+                        <div class="event-text">
+                            <h4 class="event-title">Monthly Municipal Meeting</h4>
+                            <p class="event-date-time">September 12, 2024 <span>10:00 am - 11:30 am </span></p>
+                            <p class="event-venue">Midvaal Municipal Council </p>
+
+                        </div>
+                        <button class="events-btn"> FIND OUT MORE </button>
+
+                    </div>
+
+                    <div class="event-div">
+                        <div class="event-img-div">
+                            <img src="Images/Events/edit-gadsden-1616084_1920-150x150.jpg" alt="">
+                        </div>
+                        <div class="event-text">
+                            <h4 class="event-title">Monthly Municipal Meeting</h4>
+                            <p class="event-date-time">September 12, 2024 <span>10:00 am - 11:30 am </span></p>
+                            <p class="event-venue">Midvaal Municipal Council </p>
+
+                        </div>
+                        <button class="events-btn"> FIND OUT MORE </button>
+
+                    </div>
+
+                    <div class="event-div">
+                        <div class="event-img-div">
+                            <img src="Images/Events/edit-gadsden-1616084_1920-150x150.jpg" alt="">
+                        </div>
+                        <div class="event-text">
+                            <h4 class="event-title">Monthly Municipal Meeting</h4>
+                            <p class="event-date-time">September 12, 2024 <span>10:00 am - 11:30 am </span></p>
+                            <p class="event-venue">Midvaal Municipal Council </p>
+
+                        </div>
+                        <button class="events-btn"> FIND OUT MORE </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="reviews">
+                        
+            <h3>Midivaal News</h3>
+            <div class="main-grid news-grid">
+                <div class="project">
+                    <figure class="project-img">
+                        <img src="Images/pexels-robert-so-16339549.jpg" alt="">
+                    </figure>
+                    <h4 class="project-title">Electricity Upgrade</h4>
+                    <p>August 16, 2024 | Midivaal News </p>
+                    <p class="project-info"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae rem, exercitationem a sit autem consectetur corrupti porro facere ... </p>
+                    <a href="http://">Read more </a>
+                </div>
+                <div class="project">
+                    <figure class="project-img">
+                        <img src="Images/pexels-katerina-holmes-5905475.jpg" alt="">
+                    </figure>
+                    <h4 class="project-title">Proposed New Elementry Curriculum</h4>
+                    <p>July 6, 2024 | Midivaal News </p>
+                    <p class="project-info"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae rem, exercitationem a sit autem consectetur corrupti porro facere ... </p>
+                    <a href="http://">Read more </a>
+                </div>
+                <div class="project">
+                    <figure class="project-img">
+                        <img src="Images/pexels-darlene-alderson-7970849.jpg" alt="">
+                    </figure>
+                    <h4 class="project-title">New Licensing Requirements</h4>
+                    <p>July 1, 2024 | Midivaal News </p>
+                    <p class="project-info"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae rem, exercitationem a sit autem consectetur corrupti porro facere ... </p>
+                    <a href="http://">Read more </a>
+                </div>
+            </div>
+            
+            
+            <div class="subscription-div main-grid">
+                <div class="subscription-text col">
+                    <h4>Sign up for New & Alerts</h4>
+                    <p>Stay connected to Midvaal Local Municipal by signing up to receive official news and alerts by email! </p>
+
+                    <form action="" class="subscription-form">
+                        <input type="text" placeholder="Your email Address" class="subscription-input">
+                        <button class="subscription-btn">Sign up</button>
+                    </form>
+                </div>
+                <div class="subscription-img">
+                    <img src="Images/pexels-askar-abayev-6193565.jpg" alt="">
+                </div>
+                
+            </div>    
+                      
+        </section>
+
+        
+        <section class="contact-section" id="contact">
+            <h3>Get In Touch </h3>       
+                   
+            <div class="contact-grid main-grid">
+             
+                
+                <div class="contact-info">
+                    <p>We really appreciate you taking the time to get in touch <br> Please fill out this form.</p>
+                    <h4> Contact Details</h4>
+                    <div class="contact contact-card">
+                        <p><i class="fa-solid fa-location-dot"></i>Address: Block A, Cnr 3rd Ave </p>
+                        <p><i class="fa-solid fa-phone"></i>Call Us: +27 (0)11 065 9448</p>
+                        <p><i class="fa-solid fa-phone"></i>Call Us: +27 (0)11 065 9448</p>
+                        
+                    </div>
+                    <h4> Operating Hours </h4>
+                    <p class="operating-hrs"><span>Municipality</span>: 07:30 - 16: 00 </p>
+                    <p class="operating-hrs"><span>Rates Hall</span>: 07:30 - 15: 00 </p>
+                    
+                  
+                </div>
+                <form action="/user_msg" class="form-grid form" method="POST">
+                    <input type="text" placeholder="Name"  name="name" class="form-name form-item">
+                    <input type="text" placeholder="Email" name="email" class="form-email form-item">
+                    <input type="text" placeholder="Subject" name="subject" class="form-subject form-item">
+                    <input type="text" placeholder="Message" name="msg" class="form-msg form-item">
+                    <button type="submit" class="form-btn form-item">Submit</button>
+
+                </form>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer main-grid footer-grid">
+        <div class="footer-logo footer-item">
+            <img src="Images/Logo/download (2).png" alt="" class="footer-img">
+           
+            <div class="socials">
+                <i class="fa-brands fa-facebook-f social"></i>
+                <i class="fa-brands fa-x-twitter social"></i>
+                <i class="fa-brands fa-instagram social"></i>
+            </div>
+        </div>
+
+        <div class="footer-sitemap footer-item">
+            <h4 class="footer-heading"> Sitemap</h4>
+            <ul class="footer-list">
+                <li class="nav-item"><a href="#hero" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About us</a></li>
+                <li class="nav-item"><a href="#services" class="nav-link">Our Services</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact Us</a></li>     
+            </ul>
+        </div>
+
+        <div class="footer-contact footer-item">
+            <h4 class="footer-heading">Contact Us</h4>
+            <p class="footer-contact-item"><i class="fa-solid fa-phone footer-contact-icon"></i> +27 (0)11 065 9448</p>
+            <p class="footer-contact-item"><i class="fa-solid fa-envelope footer-contact-icon"></i> info@muntumi.com</p>
+            <p class="footer-contact-item"><i class="fa-solid fa-location-dot footer-contact-icon"></i> Block A, Cnr 3rd Ave and Cedar Road</p>
+        
+          
+        </div>
+        
+
+
+    </footer>
+    <div class="copyright">
+       <p class="copyright-text">&copy Copyright 2024 <span class="copyright-span">Midivaal</span>. All Rights Reserved</p>
+      
+    </div>
+
+    
+</body>
+</html>
